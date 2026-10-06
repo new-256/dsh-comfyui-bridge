@@ -153,7 +153,7 @@ npm registry 上 `dsh-comfyui-bridge` 当前只有 1.0.0（2026-09-08 11:52 UTC 
 - [ ] 读本文件 + README 第 1-4 节（功能与工具用法）
 - [ ] 跑 `smoke-test.mjs` 确认环境 OK
 - [ ] 跑 `comfyui_status`（任意 DSH 会话）确认桥接连通
-- [ ] 想改代码 → 按 5.1 方式一 junction 直连 → 重启 DSH → 5.3 冒烟
+- [x] ~~想改代码 → 按 5.1 方式一 junction 直连~~（已执行，DSH 重启即用开发版）
 - [ ] 改完发版 → 5.4
 
 *交接人：DSH agent（glm-5.3）· 2026-09-08*
