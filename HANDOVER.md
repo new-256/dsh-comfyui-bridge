@@ -157,3 +157,15 @@ npm registry 上 `dsh-comfyui-bridge` 当前只有 1.0.0（2026-09-08 11:52 UTC 
 - [ ] 改完发版 → 5.4
 
 *交接人：DSH agent（glm-5.3）· 2026-09-08*
+
+
+---
+
+## 0.2.0 升级兼容确认（2026-10-07 金标准验证）
+
+- **本插件版本**: 1.1.0
+- **目标运行时**: DSH 0.2.0-rc.2
+- **验证方式**: 隔离目录安装 0.2.0-rc.2 全套依赖，用 dsh-app-boot@0.2.0-rc.2 官方 valuatePluginCompatibility 逻辑对本插件实跑
+- **结论**: ✅ **PASS — 无需 version-exemption，DSH 更新后可正常加载启动**
+- **关键事实**: 0.2.0 环境 react 为 18（>=18.2.0 <19），与本插件前端 peer 一致；本插件无阻塞性 @deepseek-ai/dsh peer 冲突
+- 详见总台账：C:\Users\lcl\Desktop\DSH插件开发\插件版本管控与交接文档.md §6
